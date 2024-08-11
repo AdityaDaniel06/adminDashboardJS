@@ -1,0 +1,70 @@
+{
+  "registration": [
+    {
+      "id": "fcca",
+      "name": "Aditya Daniel",
+      "email": "aditya.daniel06@gmail.com",
+      "contactNumber": "8962543747",
+      "password": "12345",
+      "cpassword": "12345"
+    }
+  ],
+  "product": [
+    {
+      "id": "4",
+      "pname": "Shoes",
+      "pprice": "999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "5",
+      "pname": "Shoes",
+      "pprice": "999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "8",
+      "pname": "Shoes",
+      "pprice": "999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "10",
+      "pname": "Shoes",
+      "pprice": "999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "11",
+      "pname": "Shoes",
+      "pprice": "1999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "12",
+      "pname": "Shoes",
+      "pprice": "999",
+      "pbrand": "abros",
+      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+    },
+    {
+      "id": "2d9b",
+      "pname": "Mobile",
+      "pprice": "100000",
+      "pimage": "",
+      "pbrand": "Apple"
+    },
+    {
+      "id": "",
+      "pname": "Bag",
+      "pprice": "1499",
+      "pimage": "",
+      "pbrand": "Skybags"
+    }
+  ]
+}
