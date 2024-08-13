@@ -1,6 +1,6 @@
 "use strict";
 
-let response = null;
+let response;
 (async function () {
   // display data on page laoding--IIFE
   let url = "http://localhost:4000/product";
@@ -47,31 +47,28 @@ async function updateProduct(id) {
 
   document.querySelector("#updateProduct").style.display = "block";
   document.querySelector("#addProduct").style.display = "none";
-
-  editedProduct();
 }
 // edit
-function editedProduct() {
-  let id = document.getElementById("productId").value;
-  let name = document.getElementById("productName").value;
-  let price = document.getElementById("productPrice").value;
-  let image = document.getElementById("productImage").value;
-  let brand = document.getElementById("productBrand").value;
+function editedProduct(id) {
+  let idU = document.getElementById("productId").value;
+  let nameU = document.querySelector("#productName").value;
+  let priceU = document.querySelector("#productPrice").value;
+  let imageU = document.querySelector("#productImage").value;
+  let brandU = document.querySelector("#productBrand").value;
 
-  let product = {
-    pname: name,
-    pprice: price,
-    pimage: image,
-    pbrand: brand,
+  let updatedDetail = {
+    pname: nameU,
+    pprice: priceU,
+    pimage: imageU,
+    pbrand: brandU,
   };
-
-  let ur = `http://localhost:4000/product/${id}`;
+  let ur = `http://localhost:4000/product/${idU}`;
   let method = {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(product),
+    body: JSON.stringify(updatedDetail),
   };
 
   fetch(ur, method);

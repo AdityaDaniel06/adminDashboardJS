@@ -42,7 +42,8 @@ const loginUser = async () => {
 
   if (userValue) {
     window.localStorage.setItem("userDetails", JSON.stringify(userValue));
-    window.location.href = "home.html";
+    window.location.href = "landing-page.html";
+    console.log("Login Successful", userValue);
   } else {
     window.alert("Please Register First");
     window.location.href = "reg.html";

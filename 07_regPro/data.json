@@ -9,14 +9,6 @@
       "cpassword": "12345"
     },
     {
-      "id": "a675",
-      "name": "",
-      "email": "",
-      "contactNumber": "",
-      "password": "",
-      "cpassword": ""
-    },
-    {
       "id": "9e13",
       "name": "Aditya",
       "email": "test@test.com",
@@ -38,7 +30,7 @@
       "pname": "Shoes",
       "pprice": "2099",
       "pimage": "https://t3.ftcdn.net/jpg/01/21/81/86/240_F_121818673_6EID5iF76VCCc4aGOLJkd94Phnggre3o.jpg",
-      "pbrand": "abros",
+      "pbrand": "Nike",
       "id": "5"
     },
     {
@@ -59,7 +51,7 @@
       "id": "11",
       "pname": "Shoes",
       "pprice": "1999",
-      "pbrand": "abros",
+      "pbrand": "Sketchers",
       "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
     },
     {
