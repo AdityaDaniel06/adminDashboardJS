@@ -25,6 +25,8 @@ function regUser() {
   };
 
   fetch(url, method);
+
+  window.location.href = "landing-page.html";
 }
 
 const loginUser = async () => {

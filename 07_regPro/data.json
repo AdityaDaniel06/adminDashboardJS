@@ -7,29 +7,46 @@
       "contactNumber": "8962543747",
       "password": "12345",
       "cpassword": "12345"
+    },
+    {
+      "id": "a675",
+      "name": "",
+      "email": "",
+      "contactNumber": "",
+      "password": "",
+      "cpassword": ""
+    },
+    {
+      "id": "9e13",
+      "name": "Aditya",
+      "email": "test@test.com",
+      "contactNumber": "8962543747",
+      "password": "123456",
+      "cpassword": "123456"
+    },
+    {
+      "id": "e306",
+      "name": "",
+      "email": "",
+      "contactNumber": "",
+      "password": "",
+      "cpassword": ""
     }
   ],
   "product": [
     {
-      "id": "4",
       "pname": "Shoes",
-      "pprice": "999",
+      "pprice": "2099",
+      "pimage": "https://t3.ftcdn.net/jpg/01/21/81/86/240_F_121818673_6EID5iF76VCCc4aGOLJkd94Phnggre3o.jpg",
       "pbrand": "abros",
-      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
-    },
-    {
-      "id": "5",
-      "pname": "Shoes",
-      "pprice": "999",
-      "pbrand": "abros",
-      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+      "id": "5"
     },
     {
       "id": "8",
       "pname": "Shoes",
       "pprice": "999",
-      "pbrand": "abros",
-      "pimage": "https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/h/i/t/-original-imagg5wccdgd4k9m.jpeg?q=90&crop=false"
+      "pbrand": "Puma",
+      "pimage": "https://as1.ftcdn.net/v2/jpg/02/77/57/08/1000_F_277570866_4paYMmM6jGZC70J4wJhRNlML3JzRWJKQ.jpg"
     },
     {
       "id": "10",
@@ -56,14 +73,28 @@
       "id": "2d9b",
       "pname": "Mobile",
       "pprice": "100000",
-      "pimage": "",
+      "pimage": "https://crdms.images.consumerreports.org/f_auto,w_600/prod/products/cr/models/402431-smartphones-apple-iphone-12-10016496.png",
       "pbrand": "Apple"
     },
     {
       "id": "",
       "pname": "Bag",
       "pprice": "1499",
-      "pimage": "",
+      "pimage": "https://cdn.shopify.com/s/files/1/0696/1011/1257/files/SkybagsMAZEPRO03_297x.png?v=1705911148",
+      "pbrand": "Skybags"
+    },
+    {
+      "id": "e358",
+      "pname": "Laptop",
+      "pprice": "60000",
+      "pimage": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTXBS5psmDt3W2MvaRxEGCvU1cs4icLqshb8-WiODAzcN571VZqFDJInBGQnFrbGOFbHUv5UKdsRzMHx9uLbbvIBoXjnLI0boNtUBSnIOoWBz6Ijq1MOWKgoImeXAng1zEMSyhN5o&usqp=CAc",
+      "pbrand": "hp"
+    },
+    {
+      "id": "5db6",
+      "pname": "Bag",
+      "pprice": "1499",
+      "pimage": "https://cdn.shopify.com/s/files/1/0696/1011/1257/files/SkybagsMAZEPRO03_297x.png?v=1705911148",
       "pbrand": "Skybags"
     }
   ]

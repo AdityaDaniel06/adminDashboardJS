@@ -33,16 +33,48 @@ function deleteProduct(id) {
   });
 }
 
-function updateProduct(id) {
+async function updateProduct(id) {
+  let url = `http://localhost:4000/product/${id}`;
+  let data = await fetch(url);
+  response = await data.json();
   console.log(response);
-  document.querySelector("#productId").value = response[0].id;
-  document.querySelector("#productName").value = response[0].pname;
-  document.querySelector("#productPrice").value = response[0].pprice;
-  document.querySelector("#productImage").value = response[0].pimage;
-  document.querySelector("#productBrand").value = response[0].pbrand;
-  fetch(`http://localhost:4000/product/${id}`, {
-    method: "GET",
-  });
+
+  document.querySelector("#productId").value = response.id;
+  document.querySelector("#productName").value = response.pname;
+  document.querySelector("#productPrice").value = response.pprice;
+  document.querySelector("#productImage").value = response.pimage;
+  document.querySelector("#productBrand").value = response.pbrand;
+
+  document.querySelector("#updateProduct").style.display = "block";
+  document.querySelector("#addProduct").style.display = "none";
+
+  editedProduct();
+}
+// edit
+function editedProduct() {
+  let id = document.getElementById("productId").value;
+  let name = document.getElementById("productName").value;
+  let price = document.getElementById("productPrice").value;
+  let image = document.getElementById("productImage").value;
+  let brand = document.getElementById("productBrand").value;
+
+  let product = {
+    pname: name,
+    pprice: price,
+    pimage: image,
+    pbrand: brand,
+  };
+
+  let ur = `http://localhost:4000/product/${id}`;
+  let method = {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(product),
+  };
+
+  fetch(ur, method);
 }
 
 // Add new product
@@ -52,6 +84,8 @@ function addProduct() {
   let price = document.getElementById("productPrice").value;
   let image = document.getElementById("productImage").value;
   let brand = document.getElementById("productBrand").value;
+  document.querySelector("#updateProduct").style.display = "none";
+  document.querySelector("#addProduct").style.display = "block";
   console.log(name, price, image, brand);
 
   let product = {
@@ -120,3 +154,31 @@ function filterData(arg) {
       .join("");
   }
 }
+
+function startTimer(duration, display) {
+  var timer = duration,
+    minutes,
+    seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  var fiveMinutes = 60 * 5,
+    display = document.querySelector("#time");
+  startTimer(fiveMinutes, display);
+};
+window.setTimeout(function () {
+  window.location.href = "login.html";
+}, 300000);

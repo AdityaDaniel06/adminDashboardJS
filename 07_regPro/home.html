@@ -34,9 +34,9 @@
               </a>
             </div>
             <div class="col-7">
-              <button>Apps</button>
-              <button>Features</button>
-              <input type="text" placeholder="Search..." />
+              <button class="px-2">Apps</button>
+              <button class="px-2">Features</button>
+              <input type="text" placeholder="Search..." id="search-bar" />
             </div>
             <div class="col-2">
               <button class="btn-icon">
@@ -58,27 +58,110 @@
           <div class="col-3" id="side-nav">
             <ul class="list-unstyled">
               <li class="side-nav__list-item">
-                <a class="" href="landing-page.html">Dashboard</a>
-              </li>
-              <li class="side-nav__list-item"><a href="#">Analayatics</a></li>
-              <li class="side-nav__list-item"><a href="#">Products</a></li>
-              <li class="side-nav__list-item"><a href="#">Employees</a></li>
-              <li class="side-nav__list-item"><a href="#">Record</a></li>
-              <li class="side-nav__list-item"><a href="#">Settings</a></li>
-              <li class="side-nav__list-item">
-                <a href="#">Terms & Conditions</a>
+                <i class="fa-solid fa-gauge-high"></i>
+                <a class="" href="landing-page.html">&nbsp;Dashboard</a>
               </li>
               <li class="side-nav__list-item">
-                <a href="#">Privacy Policy</a>
+                <a href="analayatics.html"
+                  ><i class="fa-solid fa-chart-line"></i>&nbsp;Analayatics</a
+                >
               </li>
               <li class="side-nav__list-item">
-                <a href="#">Help & Support</a>
+                <a href="product.html"
+                  ><i class="fa-solid fa-list-check"></i>&nbsp;Manage
+                  Products</a
+                >
               </li>
-              <li class="side-nav__list-item"><a href="#">Log Out</a></li>
+              <li class="side-nav__list-item">
+                <a href="home.html"
+                  ><i class="fa-solid fa-people-roof"></i>&nbsp;Employees</a
+                >
+              </li>
+              <li class="side-nav__list-item">
+                <a href="landing-page.html"
+                  ><i class="fa-solid fa-record-vinyl"></i>&nbsp;Record</a
+                >
+              </li>
+              <li class="side-nav__list-item">
+                <a href="landing-page.html"
+                  ><i class="fa-solid fa-gear"></i> &nbsp;Settings</a
+                >
+              </li>
+              <li class="side-nav__list-item">
+                <a href="landing-page.html"
+                  ><i class="fa-solid fa-asterisk"></i> &nbsp;Terms &
+                  Conditions</a
+                >
+              </li>
+              <li class="side-nav__list-item">
+                <a href="landing-page.html"
+                  ><i class="fa-solid fa-shield-halved"></i>&nbsp;Privacy
+                  Policy</a
+                >
+              </li>
+              <li class="side-nav__list-item">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#">&nbsp;Help & Support</a>
+              </li>
+              <li
+                class="side-nav__list-item"
+                data-bs-toggle="modal"
+                data-bs-target="#logoutModal"
+              >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i
+                ><a href="#">&nbsp;Log Out</a>
+              </li>
+              <div
+                class="modal fade"
+                id="logoutModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="myModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="myModalLabel">Alert!</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Do you want to Logout?</h3>
+                      <div class="modal-footer mt-4">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                        <a href="login.html">
+                          <button type="button" class="btn btn-danger">
+                            LogOut
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </ul>
+
+            <div style="position: absolute; bottom: 4px; left: 19px">
+              <i class="fa-solid fa-clock"></i
+              ><a href="#"> Session Time-out in <span id="time">05:00</span></a>
+            </div>
           </div>
           <div class="col-9">
-            <section></section>
+            <section>
+              <h3 class="text-center mt-5">Welcome To admin Dashboard</h3>
+            </section>
           </div>
         </div>
       </div>

@@ -1,0 +1,18 @@
+table {
+  width: 95%;
+  height: 550px;
+  border: 2px solid #201f1f;
+  margin: 15px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #d7e7d5;
+}
+
+th,
+td {
+  border: 1px solid #201f1f;
+  padding: 8px;
+}
+thead {
+  background-color: rgb(128, 157, 131);
+}
